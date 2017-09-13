@@ -30,16 +30,20 @@ function bindGroupPolicy(clientMac, groupPolicyId) {
   var options = { method: 'PUT',
     url: 'https://'+configs.shard+'.meraki.com/api/v0/networks/'+configs.networkId+'/clients/'+clientMac+'/policy',
     qs: { timespan: '84000' },
-    headers: 
-     { 'content-type': 'application/json',
-       'x-cisco-meraki-api-key': configs.apiKey},
-    body: { devicePolicy: 'Group policy', groupPolicyId: groupPolicyId },
-    json: true };
+    headers: { 'content-type': 'application/json',
+       'x-cisco-meraki-api-key': configs.apiKey
+    },
+    body: { 
+      type: 'Group policy', 
+      groupPolicyId: groupPolicyId 
+    },
+    json: true 
+  };
   
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
-  
-    console.log(body);
+    
+    console.log("Meraki Group Policy Applied", body);
   });
 }
   
