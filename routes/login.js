@@ -29,7 +29,6 @@ router.post('/', function(req, res, next) {
 function bindGroupPolicy(clientMac, groupPolicyId) {
   var options = { method: 'PUT',
     url: 'https://'+configs.shard+'.meraki.com/api/v0/networks/'+configs.networkId+'/clients/'+clientMac+'/policy',
-    qs: { timespan: '84000' },
     headers: { 'content-type': 'application/json',
        'x-cisco-meraki-api-key': configs.apiKey
     },
