@@ -34,7 +34,7 @@ function bindGroupPolicy(clientMac, groupPolicyId) {
        'x-cisco-meraki-api-key': configs.apiKey
     },
     body: { 
-      devicePolicy: 'Group policy', 
+      devicePolicy: 'group', 
       groupPolicyId: groupPolicyId 
     },
     json: true 
