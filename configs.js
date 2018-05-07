@@ -4,7 +4,7 @@
 var config = {
     // Meraki API Key
     apiKey: "2f301bccd61b6c642d250cd3f76e5eb66ebd170f", // Demo API Key
-    // The "shard" number for your Meraki organization (find this in your dashboard URL)
+    // Meraki API Base URL
     apiUrl: "https://api.meraki.com/api/v0", 
     // The Meraki Network ID
     networkId: "L_643451796760560141", 
