@@ -1,0 +1,22 @@
+{
+  "name": "meraki-splash-gp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "express": "^4.15.5",
+    "global-request-logger": "^0.1.1",
+    "hbs": "~4.0.1",
+    "json-bigint": "^0.2.3",
+    "morgan": "^1.9.0",
+    "request": "^2.85.0",
+    "serve-favicon": "^2.4.5"
+  }
+}
