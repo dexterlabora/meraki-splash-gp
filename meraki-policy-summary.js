@@ -19,8 +19,11 @@ Basic Flow using async/await
 const axios = require("axios");
 var JSONbig = require('json-bigint')({"storeAsString": true});
 
-var apiKey = process.env.API_KEY || ''; // config env params
-var baseUrl = 'https://api.meraki.com/api/v0';
+// External Configuration File
+var configs = require('./configs.js');
+
+var apiKey = process.env.API_KEY || configs.apiKey || ''; // config env params
+var baseUrl = configs.baseUrl || 'https://api.meraki.com/api/v0';
 
 const meraki = axios.create({
     baseURL: baseUrl,
