@@ -16,6 +16,7 @@
     "hbs": "~4.0.1",
     "json-bigint": "^0.2.3",
     "morgan": "^1.9.0",
+    "ngrok": "^3.3.0",
     "request": "^2.85.0",
     "serve-favicon": "^2.4.5"
   }
