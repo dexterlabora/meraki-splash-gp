@@ -1,73 +1,71 @@
+<div class="main-content">
 
-    <div class="main-content">
+    <form class="form-register" method=POST action="/login">
+        <input type="hidden" name="continue_url" value={{continue_url}}>
+        <input type="hidden" name="host" value={{host}}>
+        <input type="hidden" name="base_grant_url" value={{base_grant_url}}>
+        <input type="hidden" name="user_continue_url" value={{user_continue_url}}>
+        <input type="hidden" name="node_mac" value={{node_mac}}>
+        <input type="hidden" name="client_ip" value={{client_ip}}>
+        <input type="hidden" name="client_mac" value={{client_mac}}>
 
-        <form class="form-register" method=POST action="/login">
-                <input type="hidden" name="continue_url" value={{continue_url}}>
-                <input type="hidden" name="host" value ={{host}}>
-                <input type="hidden" name="base_grant_url" value = {{base_grant_url}}>
-                <input type="hidden" name="user_continue_url" value = {{user_continue_url}}>
-                <input type="hidden" name="node_mac" value = {{node_mac}}>
-                <input type="hidden" name="client_ip" value = {{client_ip}}>
-                <input type="hidden" name="client_mac" value = {{client_mac}}>
-            
-            <div class="form-register-with-email">
+        <div class="form-register-with-email">
 
-                <div class="form-white-background">
+            <div class="form-white-background">
 
-                    <div class="form-title-row">
-                        <h1>WiFi Registration</h1>
-                        <p>One-time registration to use the Meraki WiFi network.</p>
-                    </div>
+                <div class="form-title-row">
+                    <h1>WiFi Registration</h1>
+                    <p>One-time registration to use the Meraki WiFi network.</p>
+                </div>
 
-                    <div class="form-row">
-                        <label>
-                            <span>Name</span>
-                            <input type="text" name="name" required>
-                        </label>
-                    </div>
+                <div class="form-row">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" required>
+                    </label>
+                </div>
 
-                    <div class="form-row">
-                        <label>
-                            <span>Email</span>
-                            <input type="email" name="email" required>
-                        </label>
-                    </div>
+                <div class="form-row">
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                </div>
 
-                    <div class="form-row">
-                        <label class="form-checkbox">
-                            <input type="checkbox" name="checkbox" checked value="accepted" required>
-                            <span>I agree to the <a href="/terms" target"_blank">terms and conditions</a></span>
-                        </label>
-                    </div>
+                <div class="form-row">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="checkbox" checked value="accepted" required>
+                        <span>I agree to the <a href="/terms" target"_blank">terms and conditions</a></span>
+                    </label>
+                </div>
 
-                    <div class="form-row">
-                        <button type="submit">Register</button>
-                    </div>
-
+                <div class="form-row">
+                    <button type="submit">Register</button>
                 </div>
 
             </div>
 
-            <!-- Future Social Features
-            <div class="form-sign-in-with-social">
+        </div>
 
-                <div class="form-row form-title-row">
-                    <span class="form-title">Sign in with</span>
-                </div>
+        <!-- Future Social Features
+        <div class="form-sign-in-with-social">
 
-                <a href="#" class="form-google-button">Google</a>
-                <a href="#" class="form-facebook-button">Facebook</a>
-                <a href="#" class="form-twitter-button">Twitter</a>
-                
-
+            <div class="form-row form-title-row">
+                <span class="form-title">Sign in with</span>
             </div>
-            -->
 
-        </form>
-                Your IP: {{client_ip}}
-                <br>
-                Your MAC: {{client_mac}}
-
-    </div>
+            <a href="#" class="form-google-button">Google</a>
+            <a href="#" class="form-facebook-button">Facebook</a>
+            <a href="#" class="form-twitter-button">Twitter</a>
 
 
+        </div>
+        -->
+
+
+    </form>
+    Your IP: {{client_ip}}
+    <br>
+    Your MAC: {{client_mac}}
+
+</div>
